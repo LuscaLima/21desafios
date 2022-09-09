@@ -1,0 +1,36 @@
+:root {
+  --space-blue: #090d25
+}
+
+.container-center {
+  flex-direction: column;
+  background-color: var(--space-blue);
+}
+
+.illustration {
+  position: absolute;
+  text-align: center;
+  z-index: 999;
+}
+
+.illustration .rocket {
+  width: 4rem;
+  background-color: var(--space-blue);
+}
+
+.illustration .text {
+  margin-top: .5rem;
+  color: #fff;
+  font-family: 'Cormorant Garamond', serif;
+  text-transform: uppercase;
+  letter-spacing: 0.35rem;
+  animation: blink 1s linear infinite alternate;
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}

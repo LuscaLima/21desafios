@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>13 Quizz</title>
+
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quizz">
+      <button class="back-to-menu">Menu</button>
+      <section class="page home show">
+        <ul class="menu">
+          <li class="item play">Play</li>
+          <li class="item add">Add question</li>
+        </ul>
+      </section>
+      <section class="page play">
+        <div class="score">Score: <span class="points">00</span></div>
+        <div class="container">
+          <form class="form-question" id="form-question">
+            <div class="question-text"></div>
+
+            <fieldset class="question-options">
+              <div class="question-option">
+                <input type="radio" name="answer" id="o1" />
+                <label for="o1"></label>
+              </div>
+              <div class="question-option">
+                <input type="radio" name="answer" id="o2" />
+                <label for="o2"></label>
+              </div>
+              <div class="question-option">
+                <input type="radio" name="answer" id="o3" />
+                <label for="o3"></label>
+              </div>
+              <div class="question-option">
+                <input type="radio" name="answer" id="o4" />
+                <label for="o4"></label>
+              </div>
+            </fieldset>
+            <footer>
+              <button class="answer">Answer</button>
+            </footer>
+          </form>
+        </div>
+      </section>
+      <section class="page add">
+        <div class="container">
+          <div class="alert">
+            <ul>
+              <li>- The first answer options must be the correct answer.</li>
+              <li>
+                - When viewing the questions, the options will be shuffled.
+              </li>
+            </ul>
+          </div>
+          <form class="form-add" id="form-add">
+            <div class="form-control">
+              <label for="question">Question</label>
+              <textarea id="question" cols="30" rows="8"></textarea>
+            </div>
+            <div class="options">
+              <div class="form-control correct">
+                <label for="o1">Option 01</label><input id="o1" type="text" />
+              </div>
+              <div class="form-control">
+                <label for="o2">Option 02</label><input id="o2" type="text" />
+              </div>
+              <div class="form-control">
+                <label for="o3">Option 03</label><input id="o3" type="text" />
+              </div>
+              <div class="form-control">
+                <label for="o4">Option 04</label><input id="o4" type="text" />
+              </div>
+            </div>
+            <footer>
+              <button class="save">Save</button>
+            </footer>
+          </form>
+        </div>
+
+        <div class="plus">+1 question</div>
+      </section>
+    </div>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

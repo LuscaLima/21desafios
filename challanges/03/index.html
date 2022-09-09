@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>03 Calculator</title>
+
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-center">
+      <div class="calculator">
+        <div class="header">
+          <h2>Calculator</h2>
+        </div>
+        <div class="display">
+          <div class="output">
+            <output></output>
+          </div>
+          <div class="input">
+            <input type="text" disabled value="0" />
+          </div>
+        </div>
+        <div class="keyboard">
+          <button name="sqr" value="x²" class="key">x²</button>
+          <button name="ce" value="ce" class="key">CE</button>
+          <button name="c" value="c" class="key">C</button>
+          <button name="backspace" value="backspace" class="key">
+            <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M61.7,204.1,16,128,61.7,51.9A7.9,7.9,0,0,1,68.5,48H216a8,8,0,0,1,8,8V200a8,8,0,0,1-8,8H68.5A7.9,7.9,0,0,1,61.7,204.1Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><line x1="160" y1="104" x2="112" y2="152" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="160" y1="152" x2="112" y2="104" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+          </button>
+          <button name="sqrt" value="²√x" class="key">²√x</button>
+          <button name="(" value="(" class="key">(</button>
+          <button name=")" value=")" class="key">)</button>
+          <button name="÷" value="/" class="key operator">÷</button>
+          <button name="seven" value="7" class="key">7</button>
+          <button name="eight" value="8" class="key">8</button>
+          <button name="nine" value="9" class="key">9</button>
+          <button name="×" value="*" class="key operator">×</button>
+          <button name="six" value="6" class="key">6</button>
+          <button name="five" value="5" class="key">5</button>
+          <button name="four" value="4" class="key">4</button>
+          <button name="−" value="-" class="key operator">−</button>
+          <button name="three" value="3" class="key">3</button>
+          <button name="two" value="2" class="key">2</button>
+          <button name="one" value="1" class="key">1</button>
+          <button name="+" value="+" class="key operator">+</button>
+          <button name="plusminus" value="plusminus" class="key operator">±</button>
+          <button name="zero" value="0" class="key">0</button>
+          <button name="dot" value="." class="key">.</button>
+          <button name="=" value="equals" class="key operator equals">=</button>
+        </ul>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

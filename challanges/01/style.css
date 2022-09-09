@@ -1,0 +1,13 @@
+.container-center {
+  background: url(./assets/desert.jpg);
+}
+
+.container-center .title {
+  font-size: 12rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  background: url(./assets/ocean.jpg);
+  background-clip: unset;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

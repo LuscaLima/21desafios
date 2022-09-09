@@ -1,0 +1,17 @@
+:root {
+  --space-blue: #090d25;
+  --space-dawn: #3f3251;
+}
+
+.container-center {
+  background-image: linear-gradient(10deg, var(--space-dawn), var(--space-blue));
+}
+
+.text {
+  position: absolute;
+  color: #fff;
+  font-family: 'Cormorant Garamond', serif;
+  text-transform: uppercase;
+  letter-spacing: 0.35rem;
+  z-index: 999;
+}

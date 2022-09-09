@@ -1,0 +1,57 @@
+.button {
+  padding: 1rem 2rem;
+  border: 2px solid #222;
+  background-color: #fff;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.button .text {
+  z-index: 99;
+  color: #ddd;
+  mix-blend-mode: difference;
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  transform: translateX(-100%);
+}
+
+.button:hover {
+  animation: revealHover 0s .5s forwards;
+}
+
+.button:hover::after {
+  animation: enlarge .5s, reveal .5s .5s both;
+}
+
+
+@keyframes enlarge {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes revealHover {
+  to {
+    background-color: #ddd;
+  }
+}
+
+@keyframes reveal {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}

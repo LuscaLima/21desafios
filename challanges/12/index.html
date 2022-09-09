@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>12 Responsive menu</title>
+
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://unpkg.com/phosphor-icons"></script>
+  </head>
+
+  <body>
+    <div class="mailer">
+      <nav class="navbar">
+        <div class="toggle"><span></span><span></span><span></span></div>
+        <button class="compose">
+          <i class="ph-pencil-simple-bold"></i><span>Compose</span>
+        </button>
+
+        <ul class="menu">
+          <li class="item active">
+            <button><i class="ph-house-fill"></i><span>Inbox</span></button>
+          </li>
+          <li class="item">
+            <button>
+              <i class="ph-paper-plane-tilt"></i><span>Sent</span>
+            </button>
+          </li>
+          <li class="item">
+            <button><i class="ph-star"></i><span>Favorites</span></button>
+          </li>
+          <li class="item">
+            <button>
+              <i class="ph-download-simple"></i><span>Downloads</span>
+            </button>
+          </li>
+          <li class="item">
+            <button><i class="ph-warning"></i><span>Spam</span></button>
+          </li>
+          <li class="item">
+            <button><i class="ph-trash-simple"></i><span>Trash</span></button>
+          </li>
+          <li class="item">
+            <button><i class="ph-file"></i><span>Files</span></button>
+          </li>
+        </ul>
+
+        <button class="toggle-theme">
+          <i class="ph-moon"></i><span>Theme</span>
+        </button>
+      </nav>
+      <div class="list">
+        <header class="list-header">
+          <div class="titles">
+            <h1>Inbox</h1>
+            <p>3.2k letter, 1 Unread</p>
+          </div>
+          <div>
+            <button class="btn primary">Read all</button>
+          </div>
+        </header>
+        <div class="search">
+          <div class="search-box">
+            <i class="ph-magnifying-glass"></i>
+            <input type="text" class="input" placeholder="Search" />
+          </div>
+        </div>
+        <ul class="letters">
+          <li class="letter unread">
+            <div class="avatar">
+              <img src="./assets/avatar.png" alt="letter avatar" />
+            </div>
+            <div class="infos">
+              <header>
+                <h2>John Doe</h2>
+                <strong>New Project About Finance</strong>
+                <span class="time">8:50 AM</span>
+              </header>
+              <div class="preview">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                  aliquam quos eligendi nisi.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="letter selected">
+            <div class="avatar">
+              <img src="./assets/avatar.png" alt="letter avatar" />
+            </div>
+            <div class="infos">
+              <header>
+                <h2>John Doe</h2>
+                <strong>New Project About Finance</strong>
+                <span class="time">8:50 AM</span>
+              </header>
+              <div class="preview">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                  aliquam quos eligendi nisi.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="letter">
+            <div class="avatar">
+              <img src="./assets/avatar.png" alt="letter avatar" />
+            </div>
+            <div class="infos">
+              <header>
+                <h2>John Doe</h2>
+                <strong>New Project About Finance</strong>
+                <span class="time">8:50 AM</span>
+              </header>
+              <div class="preview">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                  aliquam quos eligendi nisi.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="display">
+        <header>
+          <ul class="options">
+            <li class="option">
+              <button><i class="ph-archive-fill"></i></button>
+            </li>
+            <li class="option ml-auto">
+              <button><i class="ph-trash-simple-fill"></i></button>
+            </li>
+            <li class="option">
+              <button><i class="ph-folder-simple-minus-fill"></i></button>
+            </li>
+            <li class="option ml-auto">
+              <button><i class="ph-arrow-bend-up-left-fill"></i></button>
+            </li>
+            <li class="option">
+              <button><i class="ph-arrow-bend-double-left"></i></button>
+            </li>
+            <li class="option">
+              <button><i class="ph-arrow-bend-up-right-fill"></i></button>
+            </li>
+            <li class="option ml-auto">
+              <button>
+                <i class="ph-archive-box"></i> <span>Move to</span>
+              </button>
+            </li>
+            <li class="option ml-auto">
+              <button><i class="ph-question-fill"></i></button>
+            </li>
+            <li class="option">
+              <button><i class="ph-gear-six-fill"></i></button>
+            </li>
+          </ul>
+        </header>
+        <div class="letter">
+          <header>
+            <div class="author">
+              <img src="./assets/avatar.png" alt="author avatar" />
+              <strong>John Doe</strong>
+            </div>
+            <div class="infos">
+              <p class="email">john<span>@</span>email.com</p>
+              <span class="date">10 jan, 8:50 AM</span>
+            </div>
+            <div class="title">
+              <h3>New Project About Finance</h3>
+            </div>
+          </header>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime,
+              molestiae! Ad nisi hic dolores accusamus? Esse veritatis quia
+              natus nisi ipsum exercitationem, sit blanditiis fuga soluta vel
+              deserunt, ex dolores.
+            </p>
+            <ul class="attached">
+              <li class="files"><img src="" alt="" /></li>
+              <li class="files"><img src="" alt="" /></li>
+            </ul>
+          </div>
+        </div>
+        <footer>
+          <button class="btn primary">Reply to John Doe</button>
+          <button class="btn plain">Foward</button>
+          <button class="btn danger invert">Delete</button>
+        </footer>
+      </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>06 Counter</title>
+
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://unpkg.com/phosphor-icons"></script>
+  </head>
+  <body>
+    <div class="container-center">
+      <div class="counter">
+        <div class="display">
+          <span class="time minutes">00</span>
+          <span class="divisor"></span>
+          <span class="time seconds">00</span>
+        </div>
+        <div class="tracker"></div>
+        <div class="actions">
+          <span class="action play show">
+            <i class="ph-play-fill"></i>
+          </span>
+          <span class="action stop">
+            <i class="ph-stop-fill"></i>
+          </span>
+          <span class="action pause">
+            <i class="ph-pause-fill"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

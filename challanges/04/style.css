@@ -1,0 +1,16 @@
+.title {
+  color: rgba(63, 61, 86, .75);
+  font-size: 7rem;
+  font-weight: bolder;
+}
+
+.subtitle {
+  color: rgba(63, 61, 86, .75);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.illustration {
+  width: 300px;
+  margin-top: 2rem;
+}
